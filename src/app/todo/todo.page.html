@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>todo</ion-title>
+    <ion-button slot="start">
+      <ion-icon name="bonfire"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" [routerLink]="['/create-todo']">
+      <ion-icon name="add"></ion-icon>
+      <ion-label>Create</ion-label>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-avatar>
+    <img alt="avatar" src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-avatar>
+  <ion-list>
+    <ion-item *ngFor="let item of todos">
+      {{item}}
+    </ion-item>
+  </ion-list>
+</ion-content>

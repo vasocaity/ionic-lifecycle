@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>stroge</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input clearInput placeholder="......" [(ngModel)]="val"></ion-input>
+  <ion-button (click)="onSave()">Save</ion-button>
+
+  <ion-item>
+    <ion-label>Value</ion-label>
+    {{ lableReadStorage }}
+  </ion-item>
+  <ion-button (click)="onClickRead()">Read</ion-button>
+  <br>
+  <app-card></app-card>
+</ion-content>

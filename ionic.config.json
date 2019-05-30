@@ -1,5 +1,7 @@
 {
   "name": "chapet4-lifecycle",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

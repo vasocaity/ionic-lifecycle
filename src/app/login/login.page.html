@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>IONIC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-button [routerLink]="['/home']">SEC</ion-button> -->
+  <!-- <button (click)="onGoHome()"> go home</button> -->
+  <div class="content-grid">
+    <!-- <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              HELLO
+            </ion-card-title>
+            <ion-card-content>
+              Wednesday
+            </ion-card-content>
+          </ion-card-header>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Input
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="stacked">Username</ion-label>
+              <ion-input placeholder="name" type="text" color="danger"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked">Password</ion-label>
+              <ion-input placeholder="name" type="password" color="danger"></ion-input>
+            </ion-item>
+      
+            <ion-button color="tertiary"> sec</ion-button>
+          </ion-card-content>
+        </ion-card> -->
+
+    <ion-item class="username-input">
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input placeholder="name" type="text" color="danger" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item class="password-input">
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input placeholder="name" type="password" color="danger" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-button class="login-btn" color="tertiary" (click)="onGoHome()"> sec</ion-button>
+  </div>
+</ion-content>

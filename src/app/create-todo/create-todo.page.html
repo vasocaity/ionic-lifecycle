@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Todo</ion-title>
+    <ion-button slot="start" color="light" (click)="onBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="fg" class="content-grid">
+    <ion-item class="title-input">
+      <ion-label position="stacked">Title</ion-label>
+      <ion-input placeholder="title" type="text" formControlName="title" color="danger"></ion-input>
+    </ion-item>
+    <ion-item class="describe-input">
+      <ion-label position="stacked">Description</ion-label>
+      <ion-input placeholder="description" type="text" formControlName="description" color="danger"></ion-input>
+    </ion-item>
+    <ion-button class="create-btn" color="tertiary" (click)="onCreateTodo()">Create</ion-button>
+  </form>
+</ion-content>
